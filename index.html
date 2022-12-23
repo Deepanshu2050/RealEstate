@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Property Website</title>
+	<script src="https://kit.fontawesome.com/5c286960f0.js" crossorigin="anonymous"></script>
+	<style type="text/css">
+		*{
+    		margin:0;
+    		padding:0;
+    		user-select:none;
+    		font-family:sans-serif;
+    	}
+
+		body{
+			background-image: url("img/bg.png");
+			background-repeat: no-repeat;
+			background-attachment: scroll;
+			background-size: 1525px 2300px;
+		}
+		header{
+			margin-top: initial;
+			text-align: center;
+			text-decoration-style: solid;
+			text-decoration-color: black;
+		}
+		main{
+			padding-top: initial;
+			padding-bottom: initial;
+		}
+		h1{
+			font-size: 50px;
+			color: white;
+			padding-top: 15px;
+		}
+		.classul1{
+			background: rgba(64, 74, 90, 0.3);
+		}
+        
+		li{
+			display: inline;
+			padding: 0px 50px 0px 50px;
+			font-size: 20px;
+			color: black;
+			cursor: pointer;
+		}
+		.image1{
+			height: 130px;
+			width: 130px;
+			border: 0px solid;
+			border-radius: 5%;
+			background-size: auto;
+			padding: 10px 0px 10px 0px;
+		}
+		.views{
+			text-align: center;
+			color: white;
+			font-size: 40px;
+			padding: 20px 0px 15px 0px;
+		}
+		label{
+			display: inline-block;
+			cursor: pointer;
+		}	
+		select{
+			width: 10rem;
+			height: 3rem;
+			text-align: center;
+		}
+		.search{
+			padding: 0px 30px 0px 30px;
+			text-align: center;
+			
+		}
+		.project1{
+			text-align: center;
+		}
+		.gallery{
+			text-align: center;
+			color: white;
+			font-size: 40px;
+			padding: 20px 0px 15px 0px;
+		}
+		.image2{
+			height: 20vh;
+			width: 20vw;
+			filter: grayscale(60%);
+			transition: 1s;
+			padding: 35px;
+		}
+		.image2:hover{
+			filter: grayscale(0);
+			transform: scale(1.25);
+		}
+		.search2 input{
+			width: 300px;
+			height: 3rem;
+			text-align: center;
+			display: inline-block;
+		}
+		button{
+			background: black;
+			border-radius: 5px;
+			border-color: gold;
+			size: 20px;
+			border-radius: 30px;
+			font-size: 15px;
+			text-align: center;
+			margin: 20px;
+			height: 40px;
+			width: 70px;
+		}
+		button:hover{
+			cursor: pointer;
+			opacity: 1;
+		}
+		a{
+			text-decoration: none;
+			text-decoration-color: white;
+			color: white;
+		}
+		footer{
+			margin-top: 150	px;
+			width: 70%;
+			padding: 100px 15%;
+			background: #333;
+			color: #efefef;
+			display: flex;
+			border-radius: 6px;
+
+		}
+		footer div{
+			text-align: center;
+		}
+		.col-2{
+			flex-grow: 1;
+			display: inline;
+		}
+		footer div h3{
+			font-weight: 300;
+			margin-bottom: 30px;
+			letter-spacing: 1px;
+		}
+		.col-1 a{
+			display: block;
+			text-decoration: none;
+			color: #efefef;
+			margin-bottom: 10px;
+			color: white;
+		}
+		.col-2 form input{
+			width: 350px;
+			height: 45px;
+			border-radius: 5px;	
+			text-align: center;
+			margin-bottom: 40px;
+			margin-top: 20px;
+			outline: none;
+			border: none;
+		}
+		.col-2 form button{
+			background: transparent;
+			border: 2px solid #fff;
+			color: #fff;
+			border-radius: 30px;
+			padding: 10px 30px;
+			font-size: 15px;
+			cursor: pointer;
+			width: 200px;
+			height: 35px;
+		}
+		.col-3 .social-icons{
+			margin-top: 30px;
+		}
+		.col-3 .social-icons i{
+			font-size: 23px;
+			margin: 10px;
+			cursor: pointer;
+		}
+	</style>
+	
+</head>
+<body>
+	<header>
+		<h1 class="real_estate"><b><big><ins>REAL ESTATE</ins></big></b></h1>
+		<img src="img/logo.jpeg" class="image1">
+		<nav>
+			<ul class="classul1">
+				<b>
+				<!-- <li><a href="#">BUY</a></li> -->
+				<!-- <li><a href="#">RENT</a></li> -->
+				<!-- <li><a href="#">SELL</a></li> -->
+				<li><a href="feedback.html">Feed-Back</a></li>
+				<li><a href="newlog.html">Sign up</a></li>
+				<li><a href="login.html">Login</a></li>
+				<li><a href="tables.html">Post property</a></li>
+				</b>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h2 class="views"><strong>FIND YOUR HOUSE</strong></h2>
+			<div>
+				<form action="/action_page.php" class="search">
+	  				<label for="Location"></label>
+		  				<select id="Location">
+		  					<option>--Location--</option>
+		  					<option value="Delhi">Delhi</option>
+		  					<option value="Chandhighad">Chandhighad</option>
+		  					<option value="Ludhiana">Ludhiana</option>
+		  					<option value="Jalandhar">Jalandhar</option>
+							<option value="Agra">Agra</option>
+						</select>
+	  				<label for="Property Type"></label>
+		  				<select id="Property Type">
+		  					<option>--Property Type--</option>
+		  					<option value="Flat">Flat</option>
+		  					<option value="Apartment">Apartment</option>
+		  					<option value="House">House</option>
+		  					<option value="Bungalow">Bungalow
+		  					</option>
+						</select>
+	  				<label for="Budget"></label>
+	  					<select id="Budget">
+		  					<option>--Budget--</option>
+		  					<option value="20 Lakhs">20 Lakhs</option>
+		  					<option value="50 Lakhs">50 Lakhs</option>
+		  					<option value="80 Lakhs">80 Lakhs</option>
+		  					<option value="2 Crore">2 Crore
+		  					</option>
+						</select><br>
+	  				<button type="submit"><a href="#" class="a">Search</a></button>
+				</form>
+			</div>
+		</section>
+		<section>
+			<h2 class="gallery"><b>GALLERY</u></h2>
+			<div>	
+				<div class="project1">
+					<form action="/action_page.php" class="search2">
+						<label for="info" tar></label>
+	  					<input type="search" id="info" name="info" placeholder="--Enter info--" required><br>
+	  					<button type="sumbit"><a href="#" class="a" id="info">Search</a></button>
+					</form>
+					
+				</div>
+				<div class="project2">
+					<br>	
+					<img align="left" src="img/img1.jpeg" class="image2">
+					<img align="right" src="img/img2.jpeg" class="image2">
+					<img align="right" src="img/img3.jpeg" class="image2">
+					<img align="right" src="img/img4.jpeg" class="image2">
+					<img align="left" src="img/img5.jpeg" class="image2">
+					<img align="right" src="img/img6.jpeg" class="image2">
+					<img align="right" src="img/img7.jpeg" class="image2">
+					<img align="right" src="img/img8.jpeg" class="image2">
+					<img align="left" src="img/img9.jpeg" class="image2">
+					<img align="right" src="img/img10.jpeg" class="image2">
+					<img align="right" src="img/img11.jpeg" class="image2">
+					<img align="right" src="img/img12.jpeg" class="image2">
+
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="col-1">
+			<h3>WHAT MAKES US A PREFERD CHOICE?</h3>
+			<i class="fa-solid fa-clipboard-list"></i>
+			<a href="#">Maximum Choice</a>
+			<i class="fa-solid fa-check"></i>
+			<a href="#">Buyers Trust</a>
+			<i class="fa-solid fa-thumbs-up"></i>
+			<a href="#">Seller's Prefer US</a>
+			<i class="fa-solid fa-person-chalkboard"></i>
+			<a href="#">Expert Guidance</a>
+		</div>
+		<div class="col-2">
+			<h3>GO PREMIUM</h3>
+			<form>
+				<input type="email" placeholder="Your Email address" required><br>
+				<button type="submit">SUBSCRIBE NOW</button>
+			</form>
+		</div>
+		<div class="col-3">
+			<h3>CONTACT</h3> 
+			<address>
+				<p>Bh1,<br>Lovely Proffesional University,<br>Phgwara,Punjab</p>
+			</address>
+			<div class="social-icons">
+				<a href="https://facebook.com" target="_blank"><img src="img/facebook-2.png" alt="facebook" width="30px"></a>
+				<a href="https://twitter.com" target="_blank"><img src="img/twitter.png" alt="twitter" width="30px"></a>
+				<a href="https://instagram.com" target="_blank"><img src="img/instagram.png" alt="instagram" width="30px"></a>
+				<a href="https://youtube.com" target="_blank"><img src="img/youtube.png" alt="youtube" width="30px"></a>
+			</div>
+		</div>
+	</footer>	
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Properties</title>
+    <style>
+      table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+    </style>
+</head>
+<body>
+  <table>
+    <caption>Post Properties</caption>
+    <thead>
+      <tr>
+        <th scope="col">Properties</th>
+        <th scope="col">Types</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Duration Period</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Properties">Antilia</td>
+        <td data-label="Types">Bungalow </td>
+        <td data-label="Amount">$1,190</td>
+        <td data-label="Duration Period">03/01/2016 - 03/31/2016</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Properties">JK House</td>
+        <td data-label="Types">Bungalow</td>
+        <td data-label="Amount">$2,443</td>
+        <td data-label="Duration Period">02/01/2016 - 02/29/2016</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Properties">Corporate AMEX</td>
+        <td data-label="Types">Mansion</td>
+        <td data-label="Amount">$1,181</td>
+        <td data-label="Duration Period">02/01/2016 - 02/29/2016</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Properties">Mannat</td>
+        <td data-label="Types">Building</td>
+        <td data-label="Amount">$4842</td>
+        <td data-label="Duration Period">01/01/2016 - 01/31/2016</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Properties">Abode</td>
+        <td data-label="Types">Cottage</td>
+        <td data-label="Amount">$1,181</td>
+        <td data-label="Duration Period">02/01/2016 - 02/29/2016</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Properties">Jalsa</td>
+        <td data-label="Types">Bungalow</td>
+        <td data-label="Amount">$1,181</td>
+        <td data-label="Duration Period">02/01/2016 - 02/29/2016</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Properties">Jatia House</td>
+        <td data-label="Types">Cottage</td>
+        <td data-label="Amount">$1,181</td>
+        <td data-label="Duration Period">02/01/2016 - 02/29/2016</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Properties">Retirement Home</td>
+        <td data-label="Types">Bungalow</td>
+        <td data-label="Amount">$1,181</td>
+        <td data-label="Duration Period">02/01/2016 - 02/29/2016</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Properties">Jindal House</td>
+        <td data-label="Types">Cottage</td>
+        <td data-label="Amount">$1,181</td>
+        <td data-label="Duration Period">02/01/2016 - 02/29/2016</td>
+      </tr>
+      <tr>
+        <td scope="row" data-label="Properties">Ruia House</td>
+        <td data-label="Types">Bungalow</td>
+        <td data-label="Amount">$1,181</td>
+        <td data-label="Duration Period">02/01/2016 - 02/29/2016</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
